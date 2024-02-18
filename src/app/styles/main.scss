@@ -1,0 +1,21 @@
+@import "reset"; // Reset CSS must be first import due to style cascade.
+
+// Core scss files
+@import "variables";
+@import "mixins/media-query";
+@import "typography";
+@import "layout";
+
+// Partials scss files
+@import "partials/header";
+@import "partials/button";
+
+// Components scss files
+@import "components/hero";
+@import "components/about";
+
+
+body {
+    color: $blue;
+    @extend .inter-regular;
+}

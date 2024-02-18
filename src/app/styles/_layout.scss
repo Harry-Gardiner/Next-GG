@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  // Using the mixin for media queries
+  @include media(sm) {
+    max-width: 540px;
+  }
+
+  @include media(md) {
+    max-width: 720px;
+  }
+
+  @include media(lg) {
+    max-width: 960px;
+  }
+
+  @include media(xl) {
+    max-width: 1140px;
+  }
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+
+   main {
+      flex: 1;
+
+      section {
+        padding-top: $sp-xl;
+        padding-bottom: $sp-xl;
+
+        @include media(md) {
+          padding-top: $sp-xxl;
+          padding-bottom: $sp-xxl;
+        }
+      }
+   }
+}
+
+/*
+  Spacing utility
+  - Use the --flow-space variable to set the margin between elements or use the default value
+  See https://piccalil.li/quick-tip/flow-utility/
+*/
+.flow > * + * {
+  margin-top: var(--flow-space, $sp-sm);
+}
+
+/*
+  Overflow utility
+*/
+.overflow {
+  overflow-x: hidden; /* Hide horizontal overflow */
+  margin-left: calc(50% - 50vw); /* Center the container */
+  width: 100vw;
+  position: relative;
+}
