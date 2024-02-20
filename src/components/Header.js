@@ -26,7 +26,7 @@ function Header() {
                             </Link>
                         </li>
                         <li className="nav_item" role="menuitem">
-                            <Link href="#skills">
+                            <Link href="#services">
                                 Services
                             </Link>
                         </li>

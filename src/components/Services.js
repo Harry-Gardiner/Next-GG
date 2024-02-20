@@ -2,8 +2,8 @@ import Service from "./partials/Service";
 
 const Services = () => {
     return (
-      <section className="services overflow">
-        <div class="container">
+      <section id="services" className="services overflow">
+        <div className="container">
             <h2>Services</h2>
             <div className="services__wrapper">
                 <Service
