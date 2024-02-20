@@ -1,0 +1,36 @@
+.services {
+    background-color: $blue;
+    color: $white;
+    position: relative;
+    overflow: visible;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    &::before {
+      border-width: 0 100vw 50px 0;
+      border-color: transparent $blue transparent transparent;
+      top: -49.3px;
+      left: 0;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      border-width: 50px 100vw 0 0;
+      border-color: $blue transparent transparent transparent;
+      bottom: -49.3px;
+      left: 0;
+      transform: scale(-1, 1);
+    }
+
+    &__wrapper {
+        display: grid;
+        gap: $sp-md;
+    }
+}

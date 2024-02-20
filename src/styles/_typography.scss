@@ -46,26 +46,32 @@ h6 {
 }
 
 // Font sizes
-h1 {
+h1,
+.h1 {
   font-size: $ft-xxl; 
 }
 
-h2 {
+h2,
+.h2 {
   font-size: $ft-xl; 
 }
 
-h3 {
+h3,
+.h3 {
   font-size: $ft-lg; 
 }
 
-h4 {
+h4,
+.h4 {
   font-size: $ft-md; 
 }
 
-h5 {
+h5,
+.h5 {
   font-size: $ft-sm;
 }
 
-h6 {
+h6,
+.h6 {
   font-size: $ft-xs; 
 }
