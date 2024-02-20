@@ -3,32 +3,34 @@ import Service from "./partials/Service";
 const Services = () => {
     return (
       <section className="services overflow">
-        <h2>Services</h2>
-        <div className="services__wrapper container">
-            <Service 
-                icon="/icon-flame.svg"
-                iconAlt="flame"
-                title="Boiler Servicing"
-                text="We offer a range of boiler servicing options to keep your boiler running smoothly."
-            />
-            <Service 
-                icon="/icon-tool.svg"
-                iconAlt="wrench"
-                title="Boiler Repairs"
-                text="We can help with any boiler repairs, from a leaking pipe to a broken thermostat."
-            />
-            <Service 
-                icon="/icon-tool-box.svg"
-                iconAlt="gas"
-                title="Gas Safety Checks"
-                text="We offer gas safety checks for landlords and homeowners."
-            />
-            <Service 
-                icon="/icon-plumbing.svg"
-                iconAlt="plumbing"
-                title="General Plumbing"
-                text="We can help with any general plumbing work, from a leaking tap to a new bathroom installation."
-            />
+        <div class="container">
+            <h2>Services</h2>
+            <div className="services__wrapper">
+                <Service
+                    icon="/icon-flame.svg"
+                    iconAlt="flame"
+                    title="Boiler Servicing"
+                    text="We offer a range of boiler servicing options to keep your boiler running smoothly."
+                />
+                <Service
+                    icon="/icon-tool.svg"
+                    iconAlt="wrench"
+                    title="Boiler Repairs"
+                    text="We can help with any boiler repairs, from a leaking pipe to a broken thermostat."
+                />
+                <Service
+                    icon="/icon-tool-box.svg"
+                    iconAlt="gas"
+                    title="Gas Safety Checks"
+                    text="We offer gas safety checks for landlords and homeowners."
+                />
+                <Service
+                    icon="/icon-plumbing.svg"
+                    iconAlt="plumbing"
+                    title="General Plumbing"
+                    text="We can help with any general plumbing work, from a leaking tap to a new bathroom installation."
+                />
+            </div>
         </div>
       </section>
     );
