@@ -19,7 +19,7 @@ const Services = () => {
                     text="We can help with any boiler repairs, from a leaking pipe to a broken thermostat."
                 />
                 <Service
-                    icon="/icon-tool-box.svg"
+                    icon="/icon-document-check.svg"
                     iconAlt="gas"
                     title="Gas Safety Checks"
                     text="We offer gas safety checks for landlords and homeowners."
