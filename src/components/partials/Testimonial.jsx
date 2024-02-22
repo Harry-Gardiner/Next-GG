@@ -1,16 +1,31 @@
+import Image from "next/image";
+
 const Testimonial = ({ name, date, stars, children }) => {
-  return (
-    <div className="testimonial">
-      <p>{children}</p>
-      <div>
-          <h3>{name}</h3>
-          <p>{date}</p>
-      </div>
-      <div>
-          {'⭐'.repeat(stars)}
-      </div>
-    </div>
-  );
+    date = new Date(date).toLocaleDateString('en-GB', {
+        month: 'long',
+        year: 'numeric'
+    });
+
+    return (
+        <div className="testimonial">
+        <div className="testimonial__content flow">
+            <Image src="/quote.png" alt="quote" width={35} height={31} />
+            <p>{children}</p>
+            <div className="testimonial__info">
+                <div className="testimonial__stars">
+                    <div>
+                        {Array.from({ length: stars }, (_, i) => (
+                            <img key={i} src="/star.svg" alt="star" />
+                        ))}
+                    </div>
+                </div>
+                <div className="testimonial__name">
+                    <p>{name}, {date}</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    );
 }
 
 

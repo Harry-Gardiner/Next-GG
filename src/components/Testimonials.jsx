@@ -8,7 +8,7 @@ const Testimonials = () => {
     ];
   
     return (
-      <div className="testimonials">
+      <section id="testimonials" className="testimonials">
         <h2>Testimonials</h2>
         {testimonialsData.map((testimonial, index) => (
           <Testimonial
@@ -20,7 +20,7 @@ const Testimonials = () => {
             {testimonial.text}
           </Testimonial>
         ))}
-      </div>
+      </section>
     );
   }
   
