@@ -8,18 +8,20 @@ const Testimonials = () => {
     ];
   
     return (
-      <section id="testimonials" className="testimonials">
-        <h2>Testimonials</h2>
-        {testimonialsData.map((testimonial, index) => (
-          <Testimonial
-            key={index}
-            name={testimonial.name}
-            date={testimonial.date}
-            stars={testimonial.stars}
-          >
-            {testimonial.text}
-          </Testimonial>
-        ))}
+      <section id="testimonials" className="testimonials overflow">
+        <div className="container">
+            <h2>Testimonials</h2>
+            {testimonialsData.map((testimonial, index) => (
+              <Testimonial
+                key={index}
+                name={testimonial.name}
+                date={testimonial.date}
+                stars={testimonial.stars}
+              >
+                {testimonial.text}
+              </Testimonial>
+            ))}
+        </div>
       </section>
     );
   }
