@@ -1,0 +1,13 @@
+.logos {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $sp-md;
+        justify-content: center;
+        align-items: center;
+
+        @include media(lg) {
+            max-width: 90%;
+        }
+    }
+}
