@@ -1,0 +1,49 @@
+.contact {
+    background-color: $blue;
+
+    &__content {
+        color: $white;
+
+        &>p {
+            text-align: center;
+
+            @include media(md) {
+                text-align: left;
+            }
+        }
+    }
+
+    &__details {
+        margin-top: $sp-lg;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: $sp-md;
+
+        @include media(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            gap: $sp-sm;
+
+            @include media(md) {
+                div {
+                    display: flex;
+                    gap: $sp-md;
+                }
+            }
+        }
+    }
+
+    &__location {
+        margin-top: $sp-lg;
+        display: flex;
+        justify-content: center;
+        gap: $sp-sm;
+    }
+}
