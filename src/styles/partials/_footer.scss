@@ -1,0 +1,33 @@
+.footer {
+    background-color: $grey;
+    color: $white;
+
+    &>div {
+        padding: $sp-md;
+    }
+
+    &__company-info {
+        text-align: center;
+
+        @include media(md) {
+            text-align: left;
+            display: flex;
+            gap: $sp-md;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        @include media(lg) {
+            max-width: 70%;
+        }
+    }
+
+    &__build {
+        margin-top: $sp-md;
+        text-align: center;
+
+        a {
+            color: $white;
+        }
+    }
+}
