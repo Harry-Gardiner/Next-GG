@@ -7,11 +7,13 @@ import Testimonials from "@/components/Testimonials";
 import Logos from "@/components/Logos";
 import Contact from "@/components/Contact";
 import Footer from "@/components/partials/Footer";
+import CallBtn from "@/components/partials/CallBtn";
 
 export default function Home() {
   return (
     <>
     <Header />
+    <CallBtn />
     <main className="container">
       <Hero />
       <About />
