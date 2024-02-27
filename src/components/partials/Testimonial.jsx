@@ -9,13 +9,13 @@ const Testimonial = ({ name, date, stars, children }) => {
     return (
         <div className="testimonial">
         <div className="testimonial__content flow">
-            <Image src="/quote.png" alt="quote" width={35} height={31} />
+            <Image src="/images/quote.png" alt="quote" width={35} height={31} />
             <p>{children}</p>
             <div className="testimonial__info">
                 <div className="testimonial__stars">
                     <div>
                         {Array.from({ length: stars }, (_, i) => (
-                            <img key={i} src="/star.svg" alt="star" />
+                            <img key={i} src="/images/star.svg" alt="star" />
                         ))}
                     </div>
                 </div>

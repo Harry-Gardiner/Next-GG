@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div className="about__gas-safe">
         <Image
-          src="/gas-safe.png"
+          src="/images/gas-safe.png"
           alt="Gas Safe Logo"
           width={200}
           height={100}
