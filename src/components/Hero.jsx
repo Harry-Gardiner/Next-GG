@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
@@ -9,6 +10,9 @@ const Hero = () => {
             <p className="hero__text">We are a local, family run business based in the heart of the Dorset. We offer a range of services including boiler servicing, repairs and installations, gas safety checks and general plumbing work.</p>
         </div>
         <Link className="button" href="#contact">Need a quote?</Link>
+      </div>
+      <div className="hero__image">
+        <Image src="/images/gas-flame.webp" alt="gas flames" fill={true} priority />
       </div>
     </section>
   );
