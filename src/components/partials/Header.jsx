@@ -9,7 +9,7 @@ function Header() {
             <div className="container">
                 <a href="#hero">
                     <div className="header__logo">
-                        <Image src="/images/logo-sm.png" alt="Logo" width={100} height={100} />
+                        <Image src="/images/logo-sm.png" alt="Logo" fill={true} />
                     </div>
                 </a>
                 <nav>
