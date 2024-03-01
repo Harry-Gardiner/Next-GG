@@ -7,7 +7,9 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleNavItemClick = () => {
-      setIsOpen(false);
+        setTimeout(() => {
+            setIsOpen(false);
+        }, 500);
     };
 
   return (
