@@ -37,6 +37,18 @@
                     gap: $sp-md;
                 }
             }
+
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &:hover,
+                &:focus,
+                &:focus-within
+                {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
@@ -49,9 +61,15 @@
         gap: $sp-sm;
 
         @include media(md) {
-            flex-direction: row;
-            justify-content: space-between;
             align-items: flex-start;
+        }
+    }
+
+    &__mobile {
+        margin-bottom: $sp-sm;
+
+        @include media(md) {
+            margin-bottom: 0;
         }
     }
 }

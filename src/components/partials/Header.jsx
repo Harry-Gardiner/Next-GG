@@ -29,6 +29,7 @@ function Header() {
                         <span className="line line--2"></span>
                         <span className="line line--3"></span>
                     </div>
+                    <p className='call'><a href="tel:077000000">Call 0770000000</a></p>
                     <ul id="menu" className="nav_items" role="menu" aria-labelledby="navcheckbox">
                         <li className="nav_item" role="menuitem">
                             <Link href="#about" onClick={handleNavItemClick}>

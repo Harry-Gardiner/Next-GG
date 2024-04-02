@@ -55,6 +55,27 @@
     justify-content: flex-end;
     flex: 1;
 
+    .call {
+      display: none;
+
+      a{
+        text-decoration: none;
+        color: inherit;
+
+        &:hover,
+        &:focus,
+        &:focus-within {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+
+      @include media(lg) {
+        display: block;
+        margin-right: $sp-md;
+      }
+    }
+
     .nav_items {
       @include media(lg, max) {
         position: absolute;
@@ -81,7 +102,7 @@
       gap: $sp-sm;
      
       li {
-        color: $light-blue;
+        // color: $light-blue;
 
         &::marker {
          content: none;

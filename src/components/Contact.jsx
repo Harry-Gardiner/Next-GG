@@ -14,13 +14,13 @@ const Contact = () => {
                     <div className="contact__details--item">
                         <Image src="/images/icon-phone.svg" alt="phone" width={50} height={50} />
                         <div>
-                            <p>Mobile: {mobile}</p>
-                            <p>Home: {home}</p>
+                            <p className="contact__mobile"><a href={`tel:${mobile}`}>Mobile: {mobile}</a></p>
+                            <p><a href={`tel:${home}`}>Home: {home}</a></p>
                         </div>
                     </div>
                     <div className="contact__details--item">
                         <Image src="/images/icon-email.svg" alt="email" width={50} height={50} />
-                        <p>{email}</p>
+                        <p><a href={`mailto:${email}`}>Email: {email}</a></p>
                     </div>
                 </div>
                 <div className="contact__location">
