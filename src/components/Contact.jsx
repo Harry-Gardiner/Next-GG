@@ -25,7 +25,7 @@ const Contact = () => {
                 </div>
                 <div className="contact__location">
                     <Image src="/images/icon-location-pin.svg" alt="location" width={50} height={50} />
-                    
+                    <Image src="/images/dorset_map_area.webp" alt="Work area covered inc Dorchester, Bridport, Wareham, Crossways" width={1200} height={856}/>
                 </div>
             </div>
         </div>

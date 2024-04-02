@@ -43,7 +43,15 @@
     &__location {
         margin-top: $sp-lg;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: $sp-sm;
+
+        @include media(md) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 }
