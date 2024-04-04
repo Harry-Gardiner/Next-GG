@@ -15,7 +15,7 @@ const customAnimation = keyframes`
 `;
 
 function CustomAnimation({ children }) {
-  return <Reveal keyframes={customAnimation} className="call-btn">{children}</Reveal>;
+  return <Reveal keyframes={customAnimation} className="call-btn animation animation--call-btn">{children}</Reveal>;
 }
 
 const CallBtn = () => {

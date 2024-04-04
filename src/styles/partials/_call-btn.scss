@@ -12,9 +12,6 @@
     align-items: center;
     justify-content: center;
 
-    animation: customAnimation 1s ease-out forwards;
-    animation-delay: 5s !important;
-
     @include media(md) {
         display: none;
     }

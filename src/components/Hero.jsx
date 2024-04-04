@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
@@ -9,7 +10,9 @@ const Hero = () => {
         <div className="hero__content">
             <p className="hero__text">We are a local, family run business based in the heart of the Dorset. We offer a range of services including boiler servicing, repairs and installations, gas safety checks and general plumbing work.</p>
         </div>
-        <Link className="button" href="#contact">Need a quote?</Link>
+       <AttentionSeeker effect="headShake" triggerOnce className="animation animation--btn">
+          <Link className="button" href="#contact">Need a quote?</Link>
+        </AttentionSeeker>
       </div>
       <div className="hero__image">
         <Image src="/images/gas-flame.webp" alt="gas flames" fill={true} priority />

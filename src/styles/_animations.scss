@@ -1,0 +1,11 @@
+.animation {
+    &--btn {
+        opacity: 1 !important;
+        animation-delay: 3s !important;
+    }
+
+    &--call-btn {
+        animation: customAnimation 1s ease-out forwards;
+        animation-delay: 6s !important;
+    }
+}
