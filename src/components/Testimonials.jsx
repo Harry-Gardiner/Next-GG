@@ -61,6 +61,11 @@ const Testimonials = () => {
             slidesPerView={1.5}
             centeredSlides={true}
             initialSlide={middleSlide}
+            autoplay={{
+              delay: 6000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
             modules={[Autoplay, Navigation]}
         >
           {testimonialsData.map((testimonial, index) => (
