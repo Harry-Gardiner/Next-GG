@@ -22,7 +22,7 @@ const CallBtn = () => {
   return (
     <CustomAnimation>
       <a href="tel:1234567890">
-        <Image src="/images/icon-phone-blue.svg" alt="Phone icon" width={35} height={35} />
+        <Image src="/Next-GG/images/icon-phone-blue.svg" alt="Phone icon" width={35} height={35} />
         Call
       </a>
     </CustomAnimation>

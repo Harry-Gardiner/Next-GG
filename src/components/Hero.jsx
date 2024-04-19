@@ -15,7 +15,7 @@ const Hero = () => {
         </AttentionSeeker>
       </div>
       <div className="hero__image">
-        <Image src="/images/gas-flame.webp" alt="gas flames" fill={true} priority />
+        <Image src="/Next-GG/images/gas-flame.webp" alt="gas flames" fill={true} priority />
       </div>
     </section>
   );

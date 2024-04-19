@@ -19,7 +19,7 @@ function Header() {
             <div className="container">
                 <a href="#hero">
                     <div className="header__logo">
-                        <Image src="/images/logo-sm.png" alt="Logo" fill={true} />
+                        <Image src="/Next-GG/images/logo-sm.png" alt="Logo" fill={true} />
                     </div>
                 </a>
                 <nav>

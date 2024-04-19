@@ -9,7 +9,7 @@ const Testimonial = ({ name, date, stars, children }) => {
     return (
         <div className="testimonial">
         <div className="testimonial__content flow">
-            <Image src="/images/quote.png" alt="quote" width={35} height={31} />
+            <Image src="/Next-GG/images/quote.png" alt="quote" width={35} height={31} />
             <p>{children}</p>
             <div className="testimonial__info">
                 <div className="testimonial__stars">
