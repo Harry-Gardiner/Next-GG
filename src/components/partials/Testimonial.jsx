@@ -15,7 +15,7 @@ const Testimonial = ({ name, date, stars, children }) => {
                 <div className="testimonial__stars">
                     <div>
                         {Array.from({ length: stars }, (_, i) => (
-                            <img key={i} src="/images/star.svg" alt="star" />
+                            <img key={i} src="/Next-GG/images/star.svg" alt="star" />
                         ))}
                     </div>
                 </div>

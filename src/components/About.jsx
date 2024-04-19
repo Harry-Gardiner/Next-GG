@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div className="about__gas-safe">
         <Image
-          src="/images/gas-safe.png"
+          src="/Next-GG/images/gas-safe.png"
           alt="Gas Safe Logo"
           width={200}
           height={100}
