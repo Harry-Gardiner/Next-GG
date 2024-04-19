@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Logos = () => {
     const boilerLogos = ['viesmann.png', 'glow-worm.png', 'vaillant.png', 'baxi.png', 'worcester.png', 'bosch.png', 'potterton.png']; 
-    const images = boilerLogos.map((logo) => `/images/boiler_logos/${logo}`); 
+    const images = boilerLogos.map((logo) => `/Next-GG/images/boiler_logos/${logo}`); 
   return (
     <section className="logos">
         <div className="container">
